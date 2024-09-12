@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tabela de Carros Cadastrados</h1>
+
+    <label for="search">Buscar:</label>
+    <input type="text" id="search" placeholder="Buscar por Ano, Fabricante, Placa, Cor ou Combustível" onkeyup="filterTable()">
+    <br><br>
+
+    <table border="1" id="carTable">
+        <thead>
+            <tr>
+                <th>Ano</th>
+                <th>Fabricante</th>
+                <th>Tipo de Combustível</th>
+                <th>Placa</th>
+                <th>Cor</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="carTableBody">
+            <!-- Os dados serão inseridos aqui -->
+        </tbody>
+    </table>
+    <br>
+    <a href="carro.html">Cadastrar Novo Carro</a>
+    <script src="result.js"></script>
+</body>
+</html>

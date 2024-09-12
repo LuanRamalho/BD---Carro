@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Carro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Carro</h1>
+    <form id="carForm">
+        <label for="year">Ano de Fabricação:</label>
+        <input type="number" id="year" name="year" required><br><br>
+
+        <label for="manufacturer">Fabricante:</label>
+        <input type="text" id="manufacturer" name="manufacturer" required><br><br>
+
+        <label for="type">Tipo de Combustível:</label>
+        <select id="type" name="type">
+            <option value="Gasolina">Gasolina</option>
+            <option value="Etanol">Etanol</option>
+            <option value="Flex">Flex</option>
+            <option value="Híbrido">Híbrido</option>
+            <option value="Elétrico">Elétrico</option>
+            <option value="GNV">GNV</option>
+        </select><br><br>
+
+        <label for="plate">Placa do Carro:</label>
+        <input type="text" id="plate" name="plate" required><br><br>
+
+        <label for="color">Cor do Carro:</label>
+        <select id="color" name="color">
+            <option value="Branco">Branco</option>
+            <option value="Cinza">Cinza</option>
+            <option value="Preto">Preto</option>
+            <option value="Azul">Azul</option>
+            <option value="Amarelo">Amarelo</option>
+            <option value="Rosa">Rosa</option>
+            <option value="Verde">Verde</option>
+            <option value="Vermelho">Vermelho</option>
+            <option value="Roxo">Roxo</option>
+            <option value="Bege">Bege</option>
+            <option value="Laranja">Laranja</option>
+            <option value="Ciano">Ciano</option>
+            <option value="Marrom">Marrom</option>
+        </select><br><br>
+
+        <button type="button" onclick="saveData()">Salvar Dados</button>
+    </form>
+    <br>
+    <a href="result.html">Ver Tabela de Carros</a>
+    <script src="carro.js"></script>
+</body>
+</html>
