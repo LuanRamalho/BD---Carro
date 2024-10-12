@@ -1,27 +1,93 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 20px;
+    background-color: #f0f8ff; /* Fundo suave */
+    color: #333;
 }
 
 h1 {
-    color: #333;
+    color: #0066cc; /* Azul vibrante */
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-bottom: 30px;
 }
 
 form label {
     font-weight: bold;
+    color: #0066cc;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar a tabela */
 }
 
 th, td {
-    padding: 10px;
+    padding: 15px;
     text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #0066cc;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #e9f7fe; /* Linha alternada colorida */
+}
+
+tr:hover td {
+    background-color: #d1ecf1; /* Efeito hover */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    table, th, td {
+        font-size: 0.9em;
+    }
 }
